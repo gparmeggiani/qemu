@@ -1,0 +1,10 @@
+{
+	"name": "qemu",
+	"dockerFile": "Dockerfile",
+    "mounts": [
+        "type=volume,source=qemu-devcontainer-bashhistory,target=/commandhistory",
+        "type=volume,source=qemu-devcontainer-extensions,target=/home/dev/.vscode-server/extensions"
+    ],
+	"remoteUser": "dev",
+    "containerUser": "dev"
+}
